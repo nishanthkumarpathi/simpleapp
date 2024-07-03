@@ -10,7 +10,7 @@ jobs:
     name: Deploy to Win Server
     runs-on: ubuntu-latest
     steps:
-      - name: Step1 Checkout
+      - name: Step1 Checkout idfdyuyghgh
         uses: actions/checkout@v4
       
       - name: Copy to Windows Server
