@@ -17,5 +17,5 @@ jobs:
         run: |
           sshpass -p "${{ secrets.PASSWORD }}" \
             scp -o StrictHostKeyChecking=no -r nishanth.html \
-            "${{ secrets.USERNAME }}@${{ secrets.IP }}:C:\inetpub\wwwroot\"
+            ${{ secrets.USERNAME }}@${{ secrets.IP }}:'C:\inetpub\wwwroot\'
         
