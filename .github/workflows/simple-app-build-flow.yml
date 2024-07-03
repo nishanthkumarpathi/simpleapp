@@ -16,5 +16,6 @@ jobs:
       - name: Copy to Windows Server
         run: |
           sshpass -p ${{ secrets.PASSWORD }} \
-            scp nishanth.html ${{ secrets.USERNAME }}@${{ secrets.IP}}:'C:/inetpub/wwwroot/'
+            scp nishanth.html -o StrictHostKeyChecking=no \
+            ${{ secrets.USERNAME }}@${{ secrets.IP}}:'C:\inetpub\wwwroot\'
         
