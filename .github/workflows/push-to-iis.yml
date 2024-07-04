@@ -3,7 +3,7 @@ name : Push the HTML to Windows Server
 on:
   push:
     branches:
-      - master
+      - development
 
 jobs:
   deploymentjob:
